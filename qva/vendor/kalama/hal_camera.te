@@ -16,5 +16,3 @@ get_prop(hal_camera_default, vendor_audio_prop)
 #Allow access to /data/vendor/camera
 allow hal_camera_default vendor_camera_data_file:dir { add_name write };
 allow hal_camera_default vendor_camera_data_file:file { create getattr open write };
-
-get_prop(hal_camera_default, vendor_persist_camera_prop);
